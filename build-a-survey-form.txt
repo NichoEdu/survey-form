@@ -1,0 +1,187 @@
+** start of index.html **
+
+<!DOCTYPE Html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>
+      </title>
+      </head>
+      <body>
+        <h1 id=title>freeCodeCamp Survey Form</h1>
+        <p id=description>Thank you for taking the time to help us improve the platform</p>
+        <form id=survey-form>
+          <label id="name-label">Name</label>
+          <input id="name" type="text" placeholder="Enter your Name" required>
+          <label id="email-label">Email</label>
+          <input id="email" type="email" placeholder="Enter your Email" required>
+          <label id="number-label">Age (Optional)</label>
+          <input id="number" type="number" min="10" max="45" placeholder="Age">
+          <label>Which option best describes your current role?</label>
+          <select id="dropdown">
+            <option>
+              <li>student</li>
+              </option>
+              <option>
+              <li>Full Time Job</li>
+              </option>
+              <option>
+                <li>Full Time Learner</li>
+                </option>
+                <option>
+                  <li>Prefer not to Say</li>
+                  </option>
+                  </select>
+                  <label>Would you recommend freeCodeCamp to a friend?</label>
+                  <label>
+                  <input type="radio" name="recommend" value="Definitely">Definitely
+                  </label>
+                  <label>
+                  <input type="radio" name="recommend" value="Maybe">Maybe
+                  </label>
+                  <label>
+                  <input type="radio" name="recommend" value="Not Sure">Not Sure
+                  </label>
+              <label>What is your favorite feature of freeCodeCamp?</label>
+              <select>
+                <option>
+                  <li>Challenges</li>
+                  </option>
+                  <option>
+                    <li>Projects</li>
+                    </option>
+                    <option>
+                      <li>Community</li>
+                      </option>
+                      <option>
+                        <li>Open source</li>
+                        </option>
+              <label>
+                <input type="checkbox" value="Front-end-Projects">Front-end-Projects
+                </label>
+                <label>
+                <input type="checkbox" value="Back-end-Projects">Back-end-Projects
+                </label>
+                <label>
+                <input type="checkbox" value="Data Visualization">Data Visualization
+                </label>
+                <label>
+                <input type="checkbox" value="Challenges">Challenges
+                </label>
+                <label>
+                <input type="checkbox" value="Open Source Community">Open Source Community
+
+                </label>
+                <label>
+                <input type="checkbox" value="Gitter help rooms">Gitter help rooms
+                </label>
+                <label>
+                <input type="checkbox" value="Videos">Videos
+                </label>
+                <label>
+                <input type="checkbox" value="City Meetups">City Meetups
+                </label>
+                <label>
+                <input type="checkbox" value="Wiki">Wiki
+                </label>
+                <label>
+                <input type="checkbox" value="Forum">Forum
+                </label>
+                <label>
+                <input type="checkbox" value="Additional Courses">Additional Courses
+                </label>
+                <label>Any comments or suggestions?</label>
+                <textarea placeholder="Enter your comment here..."></textarea>
+                <button id="submit">submit</button>
+        </form>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  background-image: url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+  background-size: cover;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+form {
+  background-color: rgba(27, 27, 50, 0.8);
+  width: 50%;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#title {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 30px;
+}
+
+#description {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+/* Labels and inputs */
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+/* Radio buttons and checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Submit button */
+button {
+  display: block;
+  width: 100%;
+  background-color: #37af65;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2f8f54;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  form {
+    width: 80%;
+    padding: 25px;
+  }
+}
+
+
+** end of styles.css **
+

@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-image: url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+  background-size: cover;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+form {
+  background-color: rgba(27, 27, 50, 0.8);
+  width: 50%;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#title {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 30px;
+}
+
+#description {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+/* Labels and inputs */
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+/* Radio buttons and checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Submit button */
+button {
+  display: block;
+  width: 100%;
+  background-color: #37af65;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2f8f54;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  form {
+    width: 80%;
+    padding: 25px;
+  }
+}
